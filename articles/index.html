@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> from Database</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/dd09a4070a.js" crossorigin="anonymous"></script>
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/articles.css">
+
+</head>
+
+<body>
+    <div class="basic-spec">
+        <div class="name-n-Date">
+            <div class="subDivv" id="deviceName">Device Name: Poco</div>
+            <div class="subDivv" id="uploadDate" style="align-items: end;">Release Date: 26/04/2023</div>
+        </div>
+        <div class="hr"></div>
+
+
+        <!-- basic specifications -->
+        <div class="img-n-spec">
+
+            <!-- device photos left-->
+            <div class="imgsubDivv" id="deviceImg">
+                <div class="imgSub">
+                    <img src="../req/mobilepic.jpg" alt="device image...">
+                </div>
+            </div>
+
+            <!-- device specification right-->
+            <div class="imgsubDivv" id="deviceSpec">
+                <div class="superSubtop">
+                    <h2>Price: Rs. 99999</h2>
+                </div>
+                <div class="superSubMid">
+                    <h3>Key Specifications</h3>
+                    <table>
+                        <tr>
+                            <td><i class="fa-solid fa-microchip" style="color: #ff0000; margin-right: 2%;"></i>processor
+                                : <span>snapdragon 960</span></td>
+                            <td><i class="fa-solid fa-battery-full fa-rotate-270"
+                                    style="color: #ff0000; margin-right: 2%;"></i>battery :<span>8000mAh</span></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-memory" style="color: #ff0000; margin-right: 2%;"></i>RAM :
+                                <span>8 GB</span>
+                            </td>
+                            <td><i class="fa-solid fa-sd-card" style="color: #ff0000; margin-right: 2%;"></i>ROM :
+                                <span>256 GB</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-camera" style="color: #ff0000; margin-right: 2%;"></i>back cam :
+                                <span>48 MP</span>
+                            </td>
+                            <td><i class="fa-solid fa-camera-rotate" style="color: #ff0000;"></i>front cam :
+                                <span>32 MP</span>
+                            </td>
+                        <tr>
+                            <td><i class="fa-solid fa-robot" style="color: #ff0000; margin-right: 2%;"></i>OS :
+                                <span>Android</span>
+                            </td>
+                            <td><i class="fa-solid fa-mobile-screen-button"
+                                    style="color: #ff0000; margin-right: 2%;"></i>Screen Size : <span>6'5 inch</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="superSubbtm">
+                    <button class="buyNowbtn" onclick="buyNowOverDivdisplay()"><i class="fa-solid fa-cart-shopping"
+                            style="color: #fff; font-size: 20px; margin-right: 2%;"></i>Buy Now</button>
+
+                    <button class="buyNowbtn"><i class="fa-solid fa-bookmark"
+                            style="color: #fff; font-size: 20px; margin-right: 2%;"></i>Save for later</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- basic specifications -->
+        <div class="hr" style="margin-top: 15px;"></div>
+    </div>
+
+
+    <!-- over div for buy now -->
+    <div class="buyNowOverDiv" id="buyNowOverDiv">
+        <div class="shopSites">
+            <div class="closeCross">
+                <i class="fa-solid fa-xmark fa-xl" style="color: #000205; font-size: 60px;"
+                    onclick="buyNowOverDivHide()"></i>
+            </div>
+            <div class="shops"><img src="../req/amazon.png" alt="amazon"></div>
+            <div class="shops"><img src="../req/flipkart.png" alt="flipkart"></div>
+            <div class="shops"><img src="../req/others.jpg" alt="others"></div>
+        </div>
+    </div>
+
+    <!-- pros and cons of the device -->
+    <div class="pNc">
+        <h1>Pros <i class="fa-solid fa-thumbs-up" style="color: #00ff00;"></i> and Cons <i
+                class="fa-solid fa-thumbs-down" style="color: #ff0000;"></i></h1>
+        <div class="pNcSub">
+            <div class="pros">
+                <h1>Pros <i class="fa-solid fa-thumbs-up" style="color: #00ff00;"></i></h1>
+                <ul>
+                    <li>useless</li>
+                    <li>useless</li>
+                    <li>useless</li>
+                    <li>useless</li>
+                </ul>
+            </div>
+            <div class="pros">
+                <h1>Cons <i class="fa-solid fa-thumbs-down" style="color: #ff0000;"></i></h1>
+                <ul>
+                    <li>useless</li>
+                    <li>useless</li>
+                    <li>useless</li>
+                    <li>useless</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="hr" style="margin-top: 25px;"></div>
+
+    <!-- pros and cons of the device -->
+
+
+
+
+    <!-- camera image samples -->
+    <div class="image-samples">
+        <h2>Camera Samples</h2>
+        <div class="samples-showBox"></div>
+        <h6>Click on the images below to make it larger...</h6>
+        <div class="samples">
+            <div class="sample-img"><img onclick="displayImg(this)" src="../req/1.jpg" alt=""></div>
+            <div class="sample-img"><img onclick="displayImg(this)" src="../req/2.jpg" alt=""></div>
+            <div class="sample-img"><img onclick="displayImg(this)" src="../req/3.jpg" alt=""></div>
+            <div class="sample-img"><img onclick="displayImg(this)" src="../req/4.jpg" alt=""></div>
+            <div class="sample-img"><img onclick="displayImg(this)" src="../req/5.jpg" alt=""></div>
+            <div class="sample-img"><img onclick="displayImg(this)" src="../req/6.jpg" alt=""></div>
+            <div class="sample-img"><img onclick="displayImg(this)" src="../req/7.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <!-- camera image samples -->
+
+
+
+
+
+    <div class="hr" style="margin-top: 25px;"></div>
+
+    <!-- verdict -->
+
+    <div class="verdict">
+        <h1><u>Verdict about the device</u></h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ipsam iure ab nihil maiores autem error
+            veritatis! Neque a odit ipsum rerum? Minus mollitia nihil non dolore earum, animi, necessitatibus quas
+            excepturi sed ex, incidunt nulla rerum quis ab quaerat commodi ipsum! Illum similique, cupiditate ipsam,
+            rerum cum quaerat, id libero quos vero alias modi perspiciatis dignissimos veniam ad ullam voluptatum
+            tempore dolor ea. Aspernatur consequatur, asperiores delectus incidunt in deserunt suscipit quas quod quis
+            nihil quidem facilis placeat blanditiis rem necessitatibus odit velit cumque eaque, totam vel. Pariatur ex
+            nostrum neque amet numquam sint voluptatum dignissimos enim perferendis asperiores.</h2>
+    </div>
+
+    <!-- verdict -->
+    <div class="hr" style="margin-top: 25px;"></div>
+
+
+    <!-- detailed specifications -->
+
+    <!-- part 1 -- summary -->
+    <div class="detailed-specifications">
+        <h1>Detailed Specifications of <span>DEVICE NAME</span></h1>
+        <div class="processor-specs">
+            <table cellspacing="0">
+                <tr>
+                    <td>Processor Chipset</td>
+                    <td>MediaTek Dimensity 7050</td>
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td>8 GB</td>
+                </tr>
+                <tr>
+                    <td>Rear Camera</td>
+                    <td>Triple (200MP + 8MP + 2MP)</td>
+                </tr>
+                <tr>
+                    <td>Internal Memory</td>
+                    <td>256 GB</td>
+                </tr>
+                <tr>
+                    <td>Screen Size</td>
+                    <td>6.7 inches (17.02 cms)</td>
+                </tr>
+                <tr>
+                    <td>Battery Capacity</td>
+                    <td>5000 mAh</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <!-- part 2 --  Performance -->
+
+    <div class="detailed-specifications">
+        <h1>Performance</h1>
+        <div class="processor-specs">
+            <table cellspacing="0">
+                <tr>
+                    <td>Chipset</td>
+                    <td>MediaTek Dimensity 7050</td>
+                </tr>
+                <tr>
+                    <td>No Of Cores</td>
+                    <td>8 (Octa Core)</td>
+                </tr>
+                <tr>
+                    <td>CPU</td>
+                    <td>2.6GHz, Dual core, Cortex A78
+                        2GHz, Hexa Core, Cortex A55</td>
+                </tr>
+                <tr>
+                    <td>Architecture</td>
+                    <td>64-bit</td>
+                </tr>
+                <tr>
+                    <td>Fabrication</td>
+                    <td>6 nm</td>
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td>8 GB</td>
+                </tr>
+                <tr>
+                    <td>RAM Type</td>
+                    <td>LPDDR4X</td>
+                </tr>
+                <tr>
+                    <td>Graphics</td>
+                    <td>Mali-G68 MC4</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <!-- part 3 -- DESIGN-->
+
+    <div class="detailed-specifications">
+        <h1>DESIGN</h1>
+        <div class="processor-specs">
+            <table cellspacing="0">
+                <tr>
+                    <td>Height</td>
+                    <td>6.36 inches (161.6 mm)</td>
+                </tr>
+                <tr>
+                    <td>Width</td>
+                    <td>2.91 inches (73.9 mm)</td>
+                </tr>
+                <tr>
+                    <td>Thickness</td>
+                    <td>0.32 inches (8.2 mm)</td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td>183 grams</td>
+                </tr>
+                <tr>
+                    <td>Colors</td>
+                    <td>Astral Black, Oasis Green, Sunrise Beige</td>
+                </tr>
+                <tr>
+                    <td>Screen Unlock</td>
+                    <td>Fingerprint, Face unlock</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <!-- part 4 -- display -->
+
+    <div class="detailed-specifications">
+        <h1>DISPLAY</h1>
+        <div class="processor-specs">
+            <table cellspacing="0">
+                <tr>
+                    <td>Resolution</td>
+                    <td>1080 x 2412 pixels</td>
+                </tr>
+                <tr>
+                    <td>Aspect ratio</td>
+                    <td>20.1:9</td>
+                </tr>
+                <tr>
+                    <td>Display Type</td>
+                    <td>AMOLED, Curved Display, HDR 10+</td>
+                </tr>
+                <tr>
+                    <td>Size</td>
+                    <td>6.7 inches (17.02 cms)</td>
+                </tr>
+                <tr>
+                    <td>Bezel-less display</td>
+                    <td>Yes, with Punch-hole</td>
+                </tr>
+                <tr>
+                    <td>Pixel Density</td>
+                    <td>394 pixels per inch (ppi)</td>
+                </tr>
+                <tr>
+                    <td>Brightness</td>
+                    <td>950 nits</td>
+                </tr>
+                <tr>
+                    <td>TouchScreen</td>
+                    <td>Yes, Capacitive, Multi-touch</td>
+                </tr>
+                <tr>
+                    <td>Color Reproduction</td>
+                    <td>1B Colors</td>
+                </tr>
+                <tr>
+                    <td>Screen to body percentage</td>
+                    <td>90.75 %</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <!-- part 5 -- camera -->
+
+    <div class="detailed-specifications">
+        <h1>CAMERA</h1>
+        <div class="processor-specs">
+            <table cellspacing="0">
+                <tr>
+                    <td>Rear camera setup</td>
+                    <td>Triple</td>
+                </tr>
+                <tr>
+                    <td>Rear camera
+                        (Primary)</td>
+                    <td>200 MP resolution
+                        Wide Angle (85 FoV) lens
+                        f/1.69 aperture
+                        22.9 mm focal length
+                        1.4" sensor size
+                        0.56 m pixel size</td>
+                </tr>
+                <tr>
+                    <td>Rear camera
+                        (Secondary)</td>
+                    <td>8 MP resolution
+                        Ultra-Wide Angle lens
+                        f/2.2 aperture
+                        15.9 mm focal length
+                        4.0" sensor size
+                        1.12 mm pixel size</td>
+                </tr>
+                <tr>
+                    <td>Rear camera
+                        (Tertiary)</td>
+                    <td>2 MP resolution
+                        Macro lens
+                        f/2.4 aperture
+                        21.9 mm focal length
+                        5.0" sensor size
+                        1.75�m pixel size</td>
+                </tr>
+                <tr>
+                    <td>Front camera setup</td>
+                    <td>Single</td>
+                </tr>
+                <tr>
+                    <td>Front camera
+                        (Primary)</td>
+                    <td>32 MP resolution
+                        Wide Angle (90 FoV) lens
+                        f/2.45 aperture
+                        21.3 mm focal length
+                        2.74" sensor size
+                        0.8 mm pixel size</td>
+                </tr>
+                <tr>
+                    <td>Sensor</td>
+                    <td>ISO-CELL</td>
+                </tr>
+                <tr>
+                    <td>Flash</td>
+                    <td>LED Rear flash</td>
+                </tr>
+                <tr>
+                    <td>Digital zoom</td>
+                    <td>20x</td>
+                </tr>
+                <tr>
+                    <td>Video Resolution
+                        (Rear)</td>
+                    <td>3840x2160 @ 30 fps
+                        1920x1080 @ 60 fps
+                        1280x720 @ 240 fps</td>
+                </tr>
+                <tr>
+                    <td>Video Resolution
+                        (Front)</td>
+                    <td>1920x1080 @ 30 fps
+                        1280x720 @ 30 fps</td>
+                </tr>
+                <tr>
+                    <td>Optical Image Stabilization(OIS)</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Electric Image Stabilization (EIS)</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Camera Features</td>
+                    <td>Auto Flash
+                        Auto Focus
+                        Face detection
+                        Touch to focus</td>
+                </tr>
+                <tr>
+                    <td>Shooting Modes</td>
+                    <td>Continuous Shooting
+                        High Dynamic Range mode (HDR)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- part 6 --  battery -->
+
+    <div class="detailed-specifications">
+        <h1>Battery</h1>
+        <div class="processor-specs">
+            <table cellspacing="0">
+                <tr>
+                    <td>Type</td>
+                    <td>Li-Polymer</td>
+                </tr>
+                <tr>
+                    <td>Capacity</td>
+                    <td>5000 mAh</td>
+                </tr>
+                <tr>
+                    <td>Removable</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Standby Time</td>
+                    <td>Up to 404 Hours (2G)</td>
+                </tr>
+                <tr>
+                    <td>Fast Charging</td>
+                    <td>Yes, Super VOOC, 100W</td>
+                </tr>
+                <tr>
+                    <td>Charging speed</td>
+                    <td>100 % in 26 minutes (claimed by Brand)</td>
+                </tr>
+                <tr>
+                    <td>Wireless Charging</td>
+                    <td>No</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <!-- part 7 --  storage -->
+
+    <div class="detailed-specifications">
+        <h1>Storage</h1>
+        <div class="processor-specs">
+            <table cellspacing="0">
+                <tr>
+                    <td>Internal Memory</td>
+                    <td>256 GB</td>
+                </tr>
+                <tr>
+                    <td>Memory type</td>
+                    <td>UFS 3.1</td>
+                </tr>
+                <tr>
+                    <td>Storage available for user</td>
+                    <td>224 GB</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <!-- part 8 --  SOFTWARE -->
+
+    <div class="detailed-specifications">
+        <h1>SOFTWARE</h1>
+        <div class="processor-specs">
+            <table cellspacing="0">
+                <tr>
+                    <td>Operating System</td>
+                    <td>Android v13</td>
+                </tr>
+                <tr>
+                    <td>Custom UI</td>
+                    <td>Realme UI</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <!-- part 9 --  CONNECTIVITY -->
+
+    <div class="detailed-specifications">
+        <h1>CONNECTIVITY</h1>
+        <div class="processor-specs">
+            <table cellspacing="0">
+                <tr>
+                    <td>SIM Configuration</td>
+                    <td>Dual SIM
+                        SIM1: Nano
+                        SIM2: Nano</td>
+                </tr>
+                <tr>
+                    <td>Network</td>
+                    <td>SIM1: 5G, 4G
+                        SIM2: 5G, 4G</td>
+                </tr>
+                <tr>
+                    <td>SIM1 Bands</td>
+                    <td>5G:FDD N1 / N3 / N5 / N8 / N28 ; TDD N40 / N41 / N77 / N78
+                        4G:TD-LTE 2300(band 40) / 2500(band 41) ; FD-LTE 2100(band 1) / 1800(band 3) / 2600(band 7) /
+                        900(band 8) / 700(band 28) / 850(band 5)</td>
+                </tr>
+                <tr>
+                    <td>SIM2 Bands</td>
+                    <td>5G:FDD N1 / N3 / N5 / N8 / N28 ; TDD N40 / N41 / N77 / N78
+                        4G:TD-LTE 2300(band 40) / 2500(band 41) ; FD-LTE 2100(band 1) / 1800(band 3) / 2600(band 7) /
+                        900(band 8) / 700(band 28) / 850(band 5)</td>
+                </tr>
+                <tr>
+                    <td>Voice over LTE(VoLTE)</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Wi-Fi</td>
+                    <td>Yes, with a/ac/ax/b/g/n/n 5GHz, MIMO</td>
+                </tr>
+                <tr>
+                    <td>Wi-fi features</td>
+                    <td>Mobile Hotspot</td>
+                </tr>
+                <tr>
+                    <td>USB</td>
+                    <td>USB Type-C, Mass storage device, USB charging, USB On-The-Go</td>
+                </tr>
+                <tr>
+                    <td>Bluetooth</td>
+                    <td>Bluetooth v5.2</td>
+                </tr>
+                <tr>
+                    <td>USB OTG Support</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>GPS</td>
+                    <td>Yes with A-GPS, Glonass</td>
+                </tr>
+                <tr>
+                    <td>NFC Chipset</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Infrared</td>
+                    <td>Yes</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <!-- part 10 --  SOUND -->
+
+    <div class="detailed-specifications">
+        <h1>SOUND</h1>
+        <div class="processor-specs">
+            <table cellspacing="0">
+                <tr>
+                    <td>Speaker</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Speaker Features</td>
+                    <td>Dolby Atmos</td>
+                </tr>
+                <tr>
+                    <td>Audio Jack</td>
+                    <td>Yes, USB Type-C</td>
+                </tr>
+                <tr>
+                    <td>Video Player</td>
+                    <td>Yes, Video Formats: H.263, H.264, H.265, MP4, MPEG4, VC-1, VP8, WebM</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <!-- part 11 --  SENSORS -->
+
+    <div class="detailed-specifications">
+        <h1>SENSORS</h1>
+        <div class="processor-specs">
+            <table cellspacing="0">
+                <tr>
+                    <td>Fingerprint sensor</td>
+                    <td>Yes, On-screen</td>
+                </tr>
+                <tr>
+                    <td>Face Unlock</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Other Sensor</td>
+                    <td>Light sensor
+                        Proximity sensor
+                        Accelerometer
+                        Compass
+                        Gyroscope</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- ================================================== -->
+    <!-- ================================================== -->
+
+    <div class="hr" style="margin-top: 30px;"></div>
+
+    <div class="disclaimer">
+        Disclaimer: Specifications shown may be different from the actual product. We cannot guarantee that the
+        information provided on this page is 100% correct. Please check with the retailer before purchasing.
+    </div>
+
+    <div class="hr" style="margin-top: 30px;"></div>
+
+    <!-- part 12 --  ANTUTU SCORES -->
+
+    <div class="detailed-specifications">
+        <h1>ANTUTU SCORES</h1>
+        <div class="processor-specs">
+            <table cellspacing="0">
+                <tr>
+                    <td>Overall</td>
+                    <td>534876</td>
+                </tr>
+                <tr>
+                    <td>CPU</td>
+                    <td>165501</td>
+                </tr>
+                <tr>
+                    <td>GPU</td>
+                    <td>92427</td>
+                </tr>
+                <tr>
+                    <td>Memory</td>
+                    <td>135591</td>
+                </tr>
+                <tr>
+                    <td>UX</td>
+                    <td>141357</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- part 13 --  GEEKBENCH SCORES -->
+
+    <div class="detailed-specifications">
+        <h1>GEEKBENCH SCORES</h1>
+        <div class="processor-specs">
+            <table cellspacing="0">
+                <tr>
+                    <td>Single-core</td>
+                    <td>942</td>
+                </tr>
+                <tr>
+                    <td>Multi-core</td>
+                    <td>2357</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- detailed specifications done -->
+
+    <div class="superSubbtm" style="margin-top: 20px;">
+        <button class="buyNowbtn" onclick="buyNowOverDivdisplay()"><i class="fa-solid fa-cart-shopping"
+                style="color: #fff; font-size: 20px; margin-right: 2%;"></i>Buy Now</button>
+
+        <button class="buyNowbtn"><i class="fa-solid fa-bookmark"
+                style="color: #fff; font-size: 20px; margin-right: 2%;"></i>Save for later</button>
+    </div>
+
+    <!-- till buy now button -->
+
+
+    <!-- expanded phone details -->
+    <div class="expanded">
+        <h1>Realme 11 Pro Plus Details</h1>
+
+        <!-- Design, Display, and Security -->
+        <div class="expanded-details">
+            <p>Design, Display, and Security</p>
+            <p>The Realme 11 Pro Plus is fully-loaded with a device that offers a punch-hole cutout at the front panel
+                and a triple-camera setup at the rear side. The latest smartphone is available with a 6.7-inch AMOLED
+                display that comes with 394ppi pixel density. The phone comes with a resolution of 2412 x 1080 pixels.
+                IT also packs 90.75 per cent screen-to-body ratio. The company has also added a side-mounted fingerprint
+                sensor and face unlock feature for added security. </p>
+        </div>
+
+
+        <!-- Processor, Storage, Camera -->
+        <div class="expanded-details">
+            <p>Processor, Storage, Camera</p>
+            <p>The Xiaomi Redmi 12 is equipped with an octa-core Snapdragon 695 processor which is paired with Adreno
+                619 GPU. The handset packs 4GB of RAM and 64GB of expandable storage. The Redmi 12 has a 50MP
+                triple-camera setup at the back. The rear camera module includes 8MP ultra-wide camera and a 2MP
+                portrait sensor. The selfies and video-calling department is handled by a 8MP camera. On the software
+                front, the device boots MIUI 13 which is based on Android 12 software version.</p>
+        </div>
+
+        <!-- Battery, Fast Charging, Connectivity -->
+        <div class="expanded-details">
+            <p>Battery, Fast Charging, Connectivity</p>
+            <p>A 6,000mAh battery fuels the device which offers fast charging support. Connectivity-wise, the Redmi 12
+                has dual-SIM card support, Wi-Fi 802.11 b/g/n/ac, Bluetooth v5.1, GPS, 4G VoLTE, IR blaster, a 3.5mm
+                audio jack and a USB Type-C port</p>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- js linking -->
+    <script src="../js/jsForArticles.js"></script>
+</body>
+
+</html>
