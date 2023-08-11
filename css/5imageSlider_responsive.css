@@ -1,0 +1,83 @@
+/* section 2 - sliding image animation deba */
+@media screen and (max-width: 999px) {
+    .slider {
+        margin-top: 10%;
+    }
+
+    .myslide {
+        height: 400px;
+    }
+
+    .txt {
+        letter-spacing: 2px;
+        line-height: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-animation-name: posi2;
+        -webkit-animation-duration: 2s;
+        animation-name: posi2;
+        animation-duration: 2s;
+    }
+
+    @-webkit-keyframes posi2 {
+        from {
+            top: 35%;
+        }
+
+        to {
+            top: 50%;
+        }
+    }
+
+    @keyframes posi2 {
+        from {
+            top: 35%;
+        }
+
+        to {
+            top: 50%;
+        }
+    }
+
+    .txt h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .slider {
+        margin-top: 15%;
+    }
+
+    .txt h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .slider {
+        margin-top: 20%;
+    }
+
+    .content {
+        max-width: none;
+        padding: 0 0.5rem;
+    }
+
+    .dot {
+        width: 5px;
+        height: 5px;
+        margin: 0 5px;
+    }
+
+    .prev {
+        left: -5%;
+    }
+
+    .next {
+        right: -5%;
+    }
+}
+/* section 2 - sliding image animaton */

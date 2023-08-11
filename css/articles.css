@@ -1,0 +1,504 @@
+:root {
+    --cabin-medium: 500;
+    --cabin-semi-bold: 600;
+    --cabin-bold: 700;
+    --primary: #230c69;
+    --black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.hr {
+    display: flex;
+    border: 1px solid black;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+/* scroll bar */
+html::-webkit-scrollbar{
+    width: 0.71rem;
+}
+html::-webkit-scrollbar-track{
+    background: #b7dea7;
+}
+html::-webkit-scrollbar-thumb{
+    background: rgb(0, 26, 255);
+}
+
+html::-webkit-scrollbar-thumb:hover{
+    background: rgb(255, 0, 0);
+}
+/* scroll bar */
+
+
+.basic-spec {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    color: var(--primary);
+}
+
+.name-n-Date {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.subDivv {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    font-weight: 700;
+}
+
+
+
+
+
+
+.img-n-spec {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 100%;
+    border: 0px solid red;
+}
+
+.imgsubDivv {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    width: 100%;
+    justify-content: top;
+    overflow: hidden;
+}
+
+#deviceImg .imgSub {
+    width: 100%;
+    border: 0px solid red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.imgsubDivv img {
+    height: 100%;
+}
+
+.imgsubDivv .superSubtop {
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    justify-content: center;
+    padding-left: 30p;
+}
+
+.imgsubDivv .superSubtop h2 {
+    font-size: 30px;
+    margin-left: 10%;
+    color: black;
+}
+
+.imgsubDivv .superSubMid {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.imgsubDivv .superSubMid h3 {
+    font-size: 30px;
+    text-align: start;
+    text-decoration: underline;
+}
+
+.img-n-spec .imgsubDivv .superSubMid table {
+    width: 100%;
+    height: 100%;
+    border: 0px solid black;
+    font-weight: 500;
+}
+
+.img-n-spec .imgsubDivv .superSubMid table td {
+    border: 0px solid black;
+    font-size: 20px;
+    width: 50%;
+}
+
+.img-n-spec .imgsubDivv .superSubMid table td span {
+    font-size: 23px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.superSubbtm {
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+}
+
+.buyNowbtn {
+    width: 50%;
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: 600;
+    background-color: initial;
+    background-image: linear-gradient(#8614f8 0, #0b5f7d 100%);
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
+    color: #fff;
+    display: inline-block;
+    font-family: Inter, sans-serif;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 4px;
+    margin-right: 4px;
+    outline: 0;
+    text-align: center;
+    transition: all .3s cubic-bezier(.05, .03, .35, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: bottom;
+}
+
+.buyNowbtn:hover {
+    opacity: 0.8;
+    color: #fff;
+    background-image: linear-gradient(#1473f8 0, #120b90 100%);
+    
+}
+
+@media screen and (max-width: 1000px) {
+  .buyNowbtn {
+    font-size: 14px;
+    height: 55px;
+    line-height: 55px;
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+/* over div for buy now */
+
+.buyNowOverDiv {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.shopSites {
+    background-image: linear-gradient(0deg, #afb277cb, #95c38ed1);
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 50%;
+    align-items: center;
+    justify-content: top;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.shopSites div {
+    mix-blend-mode: darken;
+}
+
+.closeCross {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    margin-top: 2%;
+    margin-right: 4%;
+    border: 0px solid red;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+.closeCross:hover {
+    transform: rotateX(180deg);
+    transition: ease 0.8s;
+}
+
+.shops {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.shopSites .shops:hover {
+    scale: 1.1;
+    transition: ease 0.5s;
+}
+
+
+
+
+
+
+/* pros and cons */
+.pNc {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    width: 100%;
+    border: 0px solid red;
+    margin-top: 20px;
+}
+
+.pNcSub {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    min-height: 100px;
+    width: 100%;
+}
+
+.pros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    min-height: 100px;
+    width: 100%;
+    border: 0px solid green;
+    justify-content: center;
+}
+
+.pNc .pNcSub .pros ul {
+    font-size: 25px;
+}
+
+
+
+
+
+
+/*camera image samples */
+.image-samples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    font-size: 30px;
+    margin-top: 20px;
+    height: 600px;
+    width: 100%;
+}
+
+.samples-showBox {
+    display: flex;
+    min-height: 400px;
+    height: auto;
+    border: 0px solid red;
+    border-radius: 8px;
+    min-width: 60%;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.samples{
+    display: flex;
+    min-height: 100px;
+    height: auto;
+    min-width: 90%;
+    margin-top: 10px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.sample-img{
+    display: flex;
+    max-width: 25%; 
+    height: 100px;
+    margin-left: 1%;
+    margin-right: 1%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    border: 0px solid rgb(255, 0, 0);
+}
+.sample-img:hover{
+    scale: 1.1;
+}
+
+
+/*camera image samples */
+
+
+
+
+
+/* verdict */
+.verdict {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: justify;
+    border: 0px solid red;
+}
+
+.verdict h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: green;
+    margin-bottom: 10px;
+}
+
+/* verdict */
+
+
+
+
+/* detailed specifications */
+.detailed-specifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border: 0px solid red;
+}
+
+.detailed-specifications h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: green;
+}
+
+.processor-specs {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.detailed-specifications .processor-specs table {
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    border: 0px solid black;
+}
+
+.detailed-specifications .processor-specs table td {
+    border: 1px solid black;
+    padding-left: 10px;
+    font-size: 20px;
+    width: 50%;
+    height: 60px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+
+
+/* disclaimer */
+.disclaimer {
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    color: red;
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+
+
+.expanded{
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: justify;
+}
+.expanded h1{
+    font-weight: 700;
+    font-size: 40px;
+    padding: 10px;
+}
+.expanded .expanded-details p:first-child{
+    color: red;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 28px;
+}
+.expanded .expanded-details p:last-child{
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+@media (max-width: 1200px) {
+    .img-n-spec{
+        flex-direction: column;
+    }
+    .img-n-spec .imgsubDivv {
+        font-size: 18px;
+    }
+
+    .img-n-spec .imgsubDivv .superSubMid table td span {
+        font-size: 23px;
+    }
+
+}
