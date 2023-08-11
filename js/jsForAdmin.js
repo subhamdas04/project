@@ -12,7 +12,7 @@ $(document).ready(function () {
             },
             success: function (data) {
                 if (data == "Success") {
-                    location.href = "http://localhost/project/adminLogin/dashboard/";
+                    location.href = "http://localhost/project/dashboard/";
                 } else {
                     alert(data);
                 }
@@ -24,10 +24,10 @@ $(document).ready(function () {
 
 
 
-// forgot password overdiv closing
-// function closeforgot(){
-//     document.getElementsByClassName("forgot")[0].style.display = "none";
-// }
-// function showForgotDiv(){
-//     document.getElementsByClassName("forgot")[0].style.display = "flex";
-// }
+// forgot password overdiv closing (ADMIN LOGIN PAGE)
+function closeforgot(){
+    document.getElementsByClassName("forgot")[0].style.display = "none";
+}
+function showForgotDiv(){
+    document.getElementsByClassName("forgot")[0].style.display = "flex";
+}
