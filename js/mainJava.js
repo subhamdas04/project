@@ -52,3 +52,6 @@ function slidefun(n) {
 function showMenuBar() {
     document.getElementById("menuBar").style.display = "flex";
 }
+function hideMenuBar() {
+    document.getElementById("menuBar").style.display = "none";
+}

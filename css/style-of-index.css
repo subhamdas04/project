@@ -44,7 +44,7 @@ html::-webkit-scrollbar-thumb:hover{
     position: relative;
     left: 0;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
     background-color: var(--primary-color);
 }
 
@@ -117,6 +117,9 @@ html::-webkit-scrollbar-thumb:hover{
 }
 
 .hamburger {
+    display: none;
+}
+.respo-hamburger{
     display: none;
 }
 
