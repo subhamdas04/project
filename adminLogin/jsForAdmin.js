@@ -12,7 +12,7 @@ $(document).ready(function () {
             },
             success: function (data) {
                 if (data == "Success") {
-                    location.href = "http://localhost/project/admin/dashboard/";
+                    location.href = "http://localhost/project/adminLogin/dashboard/";
                 } else {
                     alert(data);
                 }

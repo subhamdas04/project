@@ -6,6 +6,8 @@
     <title>Dashboard</title>
 </head>
 <body>
-    WELCOME TO NEW DASHBOARD 
+<center>
+    WELCOME boos TO NEW DASHBOARD
+</center>   
 </body>
 </html>
