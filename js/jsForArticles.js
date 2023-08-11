@@ -1,4 +1,4 @@
-// buying button flex
+// amazon flipkart -- buying button flex and hide
 function buyNowOverDivdisplay() {
     document.getElementById("buyNowOverDiv").style.display = "flex";
 }

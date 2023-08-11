@@ -44,7 +44,7 @@ function slidefun(n) {
     dot[counter - 1].className += " active";
 }
 
-// javascript for the Animation of the 5 Images under nav bar in home page
+// end of -------- javascript for the Animation of the 5 Images under nav bar in home page
 
 
 // to display the menu bar
