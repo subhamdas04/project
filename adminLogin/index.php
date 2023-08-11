@@ -6,16 +6,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Admin Login</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../css/admin-login-style.css">
 
 
 	<!-- j quer cdn -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-
-
-
 
 </head>
 
@@ -53,7 +49,7 @@
 
 
 	<!-- javascript -->
-	<script src="jsForAdmin.js"></script>
+	<script src="../js/jsForAdmin.js"></script>
 </body>
 
 </html>

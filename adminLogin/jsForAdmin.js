@@ -25,9 +25,9 @@ $(document).ready(function () {
 
 
 // forgot password overdiv closing
-function closeforgot(){
-    document.getElementsByClassName("forgot")[0].style.display = "none";
-}
-function showForgotDiv(){
-    document.getElementsByClassName("forgot")[0].style.display = "flex";
-}
+// function closeforgot(){
+//     document.getElementsByClassName("forgot")[0].style.display = "none";
+// }
+// function showForgotDiv(){
+//     document.getElementsByClassName("forgot")[0].style.display = "flex";
+// }

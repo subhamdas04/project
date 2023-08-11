@@ -1,0 +1,21 @@
+:root {
+    --cabin-medium: 500;
+    --cabin-semi-bold: 600;
+    --cabin-bold: 700;
+    --primary: #230c69;
+    --black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.hr {
+    display: flex;
+    border: 1px solid black;
+}
+
+
