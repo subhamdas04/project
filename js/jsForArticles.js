@@ -18,3 +18,10 @@ $(document).ready(function(){
     document.getElementsByClassName("samples-showBox")[0].style.backgroundImage="url(../req/1.jpg)";
     document.getElementsByClassName("samples-showBox")[0].style.backgroundSize="100% 100%";
 });
+
+
+
+// to open articles in a new tab 
+function goToArticles(){
+    window.location.href = 'https://latestphones2.netlify.app/';
+}
