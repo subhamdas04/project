@@ -23,5 +23,5 @@ $(document).ready(function(){
 
 // to open articles in a new tab 
 function goToArticles(){
-    window.location.href = 'https://latestphones2.netlify.app/';
+    window.location.href = 'http://127.0.0.1:5500/articles/';
 }
