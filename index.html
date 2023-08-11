@@ -1,11 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Home</title>
+
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- ====== font awesome cdn ==== -->
+    <script src="https://kit.fontawesome.com/4d0b4c932e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/dd09a4070a.js" crossorigin="anonymous"></script>
+
+    <!-- ======== LINK CSS ======== -->
+    <link rel="stylesheet" href="./css/style-of-index.css">
+    <link rel="stylesheet" href="./css/5imageSlider_responsive.css">
+    <link rel="stylesheet" href="./css/only_navBar_responsive.css">
+
+    <!-- =========== GOOGLE FONT ========= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+
+    <!-- =========== GOOGLE FONT ========= recentPostMainBox -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+
+    <!-- JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    
+    <!-- section 1 -- navigation bar -->
+    <section id="section1">
+        <div class="navigation-bar">
+            <div class="welcome">
+                <span style="--i:1">W</span>
+                <span style="--i:2">E</span>
+                <span style="--i:3">L</span>
+                <span style="--i:4">C</span>
+                <span style="--i:5">O</span>
+                <span style="--i:6">M</span>
+                <span style="--i:7">E</span>
+            </div>
+            <div class="websiteLogo"></div>
+
+            <input type="text" class="textbox" placeholder="Search here...">
+            
+            <a href="#section4">Mobiles</a>
+            <a href="#section5">Tablets</a>
+            <a href="#section6">Earphones</a>
+            <a href="#section7">Watches</a>
+            <a href="#section8">Laptops</a>
+            <a href="#section9">Accessories</a>
+
+            <div class="hamburger" onclick="showMenuBar()"><i class="fa-solid fa-bars"
+                    style="color: #ffffff; font-size: 30px"></i></div>
+
+        </div>
+    </section>
+    <!-- sectionn 1 - navigation bar -->
+
+    <!-- all the sections except navigation bar are inside this parent div fullpage -->
+    <div class="fullpage">
+        <!-- sectionn 2 - 5 images animation box -->
+        <section id="section2">
+            <div class="slider">
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>Article 1 title from database</h1>
+                        <button type="button" class="button-89">Read more</button>
+                    </div>
+                    <img src="./req/1.jpg" style="width: 100%; height: 100%;">
+                </div>
+
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>Article 2 title from database</h1>
+                        <button type="button" class="button-89">Read more</button>
+                    </div>
+                    <img src="./req/2.jpg" style="width: 100%; height: 100%;">
+                </div>
+
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>Article 3 title from database</h1>
+                        <button type="button" class="button-89">Read more</button>
+                    </div>
+                    <img src="./req/3.jpg" style="width: 100%; height: 100%;">
+                </div>
+
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>Article 4 title from database</h1>
+                        <button type="button" class="button-89">Read more</button>
+                    </div>
+                    <img src="./req/4.jpg" style="width: 100%; height: 100%;">
+                </div>
+
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>Article 5 title from database</h1>
+                        <button type="button" class="button-89">Read more</button>
+                    </div>
+                    <img src="./req/5.jpg" style="width: 100%; height: 100%;">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="dotsbox" style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- sectionn 3 - all recent posts -->
+        <section id="section3">
+            <div class="recentPostMainBox">
+                <h2>LATEST POSTS</h2>
+                <div class="recentPosts">
+                    <!-- ARTICLE DIV -->
+                    <div class="posts" onclick="goToArticles()">
+                        <div class="itemImg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOyf3GhIt0IQ1T6-1Ti5sbQThpNWqqCnM4BZEdUATNI52A6A65JHnNoNYlZpDc0ieA_Q&usqp=CAU"
+                                alt="google pics">
+                        </div>
+                        <div class="itemDescription">Item Description</div>
+                    </div>
+                    <div class="posts">
+                        <div class="itemImg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOyf3GhIt0IQ1T6-1Ti5sbQThpNWqqCnM4BZEdUATNI52A6A65JHnNoNYlZpDc0ieA_Q&usqp=CAU"
+                                alt="google pics">
+                        </div>
+                        <div class="itemDescription">Item Description</div>
+                    </div>
+                    <!-- ARTICLE DIV -->
+                </div>
+            </div>
+        </section>
+
+
+        <!-- sectionn 4 - mobile recent posts -->
+        <section id="section4">
+            <div class="recentPostMainBox">
+                <h2>RECENTLY LAUNCHED PHONES</h2>
+                <div class="recentPosts">
+                    <div class="posts">
+                        <div class="itemImg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOyf3GhIt0IQ1T6-1Ti5sbQThpNWqqCnM4BZEdUATNI52A6A65JHnNoNYlZpDc0ieA_Q&usqp=CAU"
+                                alt="google pics">
+                        </div>
+                        <div class="itemDescription">Item Description</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- sectionn 5 - tablets recent posts -->
+        <section id="section5">
+            <div class="recentPostMainBox">
+                <h2>RECENTLY LAUNCHED TABLETS</h2>
+                <div class="recentPosts">
+                    <div class="posts">
+                        <div class="itemImg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOyf3GhIt0IQ1T6-1Ti5sbQThpNWqqCnM4BZEdUATNI52A6A65JHnNoNYlZpDc0ieA_Q&usqp=CAU"
+                                alt="google pics">
+                        </div>
+                        <div class="itemDescription">Item Description</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- sectionn 6 - earphones recent posts -->
+        <section id="section6">
+            <div class="recentPostMainBox">
+                <h2>RECENTLY LAUNCHED earphones</h2>
+                <div class="recentPosts">
+                    <div class="posts">
+                        <div class="itemImg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOyf3GhIt0IQ1T6-1Ti5sbQThpNWqqCnM4BZEdUATNI52A6A65JHnNoNYlZpDc0ieA_Q&usqp=CAU"
+                                alt="google pics">
+                        </div>
+                        <div class="itemDescription">Item Description</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- sectionn 7 - earphones recent posts -->
+        <section id="section7">
+            <div class="recentPostMainBox">
+                <h2>RECENTLY LAUNCHED Watches</h2>
+                <div class="recentPosts">
+                    <div class="posts">
+                        <div class="itemImg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOyf3GhIt0IQ1T6-1Ti5sbQThpNWqqCnM4BZEdUATNI52A6A65JHnNoNYlZpDc0ieA_Q&usqp=CAU"
+                                alt="google pics">
+                        </div>
+                        <div class="itemDescription">Item Description</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- sectionn 8 - LAPTOPS recent posts -->
+        <section id="section8">
+            <div class="recentPostMainBox">
+                <h2>RECENTLY LAUNCHED LAPTOPS</h2>
+                <div class="recentPosts">
+                    <div class="posts">
+                        <div class="itemImg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOyf3GhIt0IQ1T6-1Ti5sbQThpNWqqCnM4BZEdUATNI52A6A65JHnNoNYlZpDc0ieA_Q&usqp=CAU"
+                                alt="google pics">
+                        </div>
+                        <div class="itemDescription">Item Description</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- sectionn 9 - ACCESORIES recent posts -->
+        <section id="section9">
+            <div class="recentPostMainBox">
+                <h2>RECENTLY LAUNCHED ACCESORIES</h2>
+                <div class="recentPosts">
+                    <div class="posts">
+                        <div class="itemImg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOyf3GhIt0IQ1T6-1Ti5sbQThpNWqqCnM4BZEdUATNI52A6A65JHnNoNYlZpDc0ieA_Q&usqp=CAU"
+                                alt="google pics">
+                        </div>
+                        <div class="itemDescription">Item Description</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--sectionn 10 - FOOTER PART -->
+        <section id="section10">
+            <div class="main"></div>
+            <footer id="Footer" style="background-color: var(--footer-bg-color);"
+                class="page-footer font-small stylish-color-dark pt-4">
+                <div style="background-color: var(--footer-bg-color);" class="container text-center text-md-left">
+                    <div class="row">
+                        <div class="col-md-4 mx-auto">
+                            <!-- Content -->
+                            <h5 class="text-uppercase font-weight-bold mt-3 mb-4">About Us</h5>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam vitae amet veritatis
+                                exercitationem deserunt accusantium asperiores repellat dignissimos quos inventore
+                                repellendus libero numquam sunt omnis tempora voluptas ab sit, doloremque laudantium,
+                                dolorum nihil facere repudiandae. Facere in nulla porro, quibusdam aspernatur nisi quasi
+                                dolorum sunt. Velit consectetur voluptate recusandae voluptatum!</p>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div id="link10" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase font-weight-bold">Products</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+                            <p>
+                                <a href="#section4">Mobiles</a>
+                            </p>
+                            <p>
+                                <a href="#section5">Tablets</a>
+                            </p>
+                            <p>
+                                <a href="#section6">Earhones</a>
+                            </p>
+                            <p>
+                                <a href="#section7">Watches</a>
+                            </p>
+                            <p>
+                                <a href="#section8">Laptops</a>
+                            </p>
+                            <p>
+                                <a href="#section9">Accesories</a>
+                            </p>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div id="link10" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+                            <p>
+                                <a href="#!">Terms and Conditions</a>
+                            </p>
+                            <p>
+                                <a href="#!">Privacy Policy</a>
+                            </p>
+                            <p>
+                                <a href="#!">Shipping Rates</a>
+                            </p>
+                            <p>
+                                <a href="#!">Help</a>
+                            </p>
+                            <p>
+                                <a href="#!">FAQ</a>
+                            </p>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p>
+                                <i class="fas fa-home mr-3"></i> Assam
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i> mail@shop.com
+                            </p>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i> + 91 XXXXX XXXXX
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-whatsapp fa-lg mr-3"></i> + 91 XXXXX XXXXX
+                            </p>
+                            <p>
+                                <a href="https://latestphones.netlify.app/admin/">Admin login</a>
+                                <!-- as of now -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Call to action -->
+                <ul style="background-color: var(--footer-bg-color);"
+                    class="list-unstyled list-inline text-center py-2">
+                    <li class="list-inline-item">
+                        <h5 class="mb-1">Subscribe for free</h5>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#Contact" class="btn btn-outline-danger btn-rounded">Sign up!</a>
+                    </li>
+                </ul>
+                <hr>
+
+                <!-- Social buttons -->
+                <div class="hover-effect1">
+                    <ul style="background-color: var(--footer-bg-color);;"
+                        class="list-unstyled list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" title="Youtube"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" title="Github"><i class="fa fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Copyright -->
+                <div style="background-color: var(--footer-bg-color);;" class="footer-copyright text-center py-3">
+                    Copyright© 2023: Design and Develop by XXXXXXXXX
+                </div>
+            </footer>
+
+        </section>
+    </div>
+
+
+    <script src="./js/mainJava.js"></script>
+
 </body>
+
 </html>
