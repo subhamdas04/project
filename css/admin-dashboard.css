@@ -143,25 +143,3 @@ header {
 
 
 
-
-
-
-
-
-
-
-/* add article overdiv section */
-
-.addArticleOver{
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border: 10px solid red;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
