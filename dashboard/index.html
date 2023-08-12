@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,9 @@
 
 
 </head>
+
 <body>
-   <header>
+    <header>
 
         <div class="logosec">
             <div class="textP">Admin Panel</div>
@@ -22,7 +24,7 @@
         <div class="searchbar">
             <input type="text" placeholder="Search here...">
             <div class="searchbtn">
-                <i class="fa-solid fa-magnifying-glass" style="font-size: 30px; color: white;"></i>
+                <i class="fa-solid fa-magnifying-glass" style="font-size: 30px; color: rgb(224, 16, 16);"></i>
             </div>
         </div>
 
@@ -30,10 +32,59 @@
             <div class="notificationDot"></div>
             <i class="fa-solid fa-bell" style="font-size: 30px; color: rgb(0, 0, 0);"></i>
             <div class="profile-circle">
-                <i class="fa-solid fa-user" style="font-size: 20px; color: white;"></i>
+                <i class="fa-solid fa-user" style="font-size: 30px; color: rgb(222, 31, 31); margin-left: 60px;"></i>
             </div>
         </div>
 
     </header>
+
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option">
+                        <i class="fa-solid fa-chart-line" style="font-size: 25px;"></i>
+                        <h3> Statistics</h3>
+                    </div>
+
+                    <div class="nav-option">
+                        <i class="fa-solid fa-plus" style="font-size: 25px;"></i>
+                        <h3>Add Articles</h3>
+                    </div>
+
+                    <div class="nav-option">
+                        <i class="fa-solid fa-building-columns" style="font-size: 25px;"></i>
+                        <h3>Add and Phone</h3>
+                    </div>
+
+                    <div class="nav-option">
+                        <i class="fa-solid fa-pen-to-square" style="font-size: 25px;"></i>
+                        <h3>Socail Edit</h3>
+                    </div>
+
+                    <div class="nav-option">
+                        <i class="fa-solid fa-gear" style="font-size: 25px;"></i>
+                        <h3>T & C</h3>
+                    </div>
+
+                    <div class="nav-option" onclick="showConfirmBtn()">
+                        <i class="fa-solid fa-right-from-bracket fa-rotate-180" style="font-size: 25px;"></i>
+                        <h3>Logout</h3>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <!-- header complete -->
+
+
+    </div>
+
+
+    <!-- add article overdiv section -->
+    
+    <div class="addArticleOver"></div>
+
 </body>
+
 </html>
