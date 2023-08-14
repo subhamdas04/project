@@ -9,7 +9,9 @@
 </head>
 
 <body>
-    <h1>Add Articles</h1>
+    <h1>Write About the Device</h1>
+    <div class="hr"></div>
+
     <div class="all_inputs">
 
         <div class="subDivs">
@@ -27,12 +29,17 @@
         </div>
 
         <div class="subDivs">
+            <h2>Device Name: &emsp;</h2>
+            <input type="text">
+        </div>
+
+        <div class="subDivs">
             <h2>Release Date: &emsp;</h2>
             <input type="date">
         </div>
 
         <div class="hr"></div>
-
+        <h1><u>Key Specifications</u></h1>
         <div class="subDivs">
             <h2>Price: &emsp;</h2>
             <input type="number">
@@ -42,10 +49,10 @@
             <h2>Processor: &emsp;</h2>
             <input type="text" placeholder="Processor name">
         </div>
-        
+
         <div class="subDivs">
             <h2>Battery : &emsp;</h2>
-            <input type="text" placeholder="Battery ">
+            <input type="number" placeholder="Battery ">
         </div>
 
         <div class="subDivs">
@@ -63,10 +70,10 @@
             <h2>ROM: &emsp;</h2>
             <input type="text" placeholder="Processor name">
         </div>
-        
+
         <div class="subDivs">
             <h2>Back Cam : &emsp;</h2>
-            <input type="text" placeholder="Battery ">
+            <input type="number" placeholder="Battery ">
         </div>
 
         <div class="subDivs">
@@ -81,7 +88,7 @@
                 <option value="ios">ios</option>
             </select>
         </div>
-        
+
         <div class="subDivs">
             <h2>screen size : &emsp;</h2>
             <input type="text" placeholder="Battery ">
@@ -91,7 +98,7 @@
 
 
         <!-- pros and cons -->
-
+        <h1><u>Pros and Cons</u></h1>
         <div class="subDivs">
             <h2>pros : &emsp;</h2>
             <div class="prosCons">
@@ -113,9 +120,10 @@
         </div>
 
         <div class="hr"></div>
-        
-        
+
+
         <!-- camera sample image upload -->
+        <h1><u>Image Upload</u></h1>
         <form action="upload.php" method="post" enctype="multipart/form-data">
             <label for="image">Select an image:</label>
             <input type="file" name="image" id="image" accept="image/*">
@@ -124,15 +132,19 @@
         <div class="hr"></div>
 
         <!-- Verdict about the device -->
+        <h1><u>Verdict</u></h1>
         <div class="subDivs">
             <h2>Verdict : &emsp;</h2>
-            <input type="textarea" placeholder="verdict ">
-        </div>
+            <textarea></textarea>
 
-        <!-- Detailed Specifications of DEVICE NAME -->
+        </div>
+        <div class="hr"></div>
+
+        <!-- Detailed Specifications of DEVICE  -->
+        <h1><u>Detailed Specifications of DEVICE </u></h1>
         <div class="subDivs">
             <h2>Processor Chipset : &emsp;</h2>
-            <input type="textarea" placeholder="Processor Chipset">
+            <input type="text" placeholder="Processor Chipset">
         </div>
 
         <div class="subDivs">
@@ -148,51 +160,53 @@
 
         <div class="subDivs">
             <h2>Rear Camera : &emsp;</h2>
-            <input type="textarea" placeholder="Rear Camera">
+            <input type="number" placeholder="Rear Camera">
         </div>
 
         <div class="subDivs">
             <h2>Internal Memory: &emsp;</h2>
-            <input type="text" placeholder="Internal Memory">
+            <input type="number" placeholder="Internal Memory">
         </div>
 
         <div class="subDivs">
             <h2>Screen Size : &emsp;</h2>
-            <input type="textarea" placeholder="Screen Size ">
+            <input type="number" placeholder="Screen Size ">
         </div>
 
         <div class="subDivs">
             <h2>Battery Capacity : &emsp;</h2>
-            <input type="textarea" placeholder="Battery Capacity ">
+            <input type="number" placeholder="Battery Capacity ">
         </div>
 
         <div class="hr"></div>
 
 
         <!-- performances -->
+
+        <h1><u>Performances</u></h1>
         <div class="subDivs">
             <h2>Chipset : &emsp;</h2>
-            <input type="textarea" placeholder="Chipset">
+            <input type="number" placeholder="Chipset">
         </div>
 
         <div class="subDivs">
             <h2>No Of Cores : &emsp;</h2>
-            <input type="textarea" placeholder="No Of Cores">
+            <input type="number" placeholder="No Of Cores">
         </div>
 
         <div class="subDivs">
             <h2>CPU : &emsp;</h2>
-            <input type="textarea" placeholder="CPU">
+            <input type="text" placeholder="CPU">
         </div>
 
         <div class="subDivs">
             <h2>Architecture : &emsp;</h2>
-            <input type="textarea" placeholder="Architecture">
+            <input type="text" placeholder="Architecture">
         </div>
 
         <div class="subDivs">
             <h2>Fabrication : &emsp;</h2>
-            <input type="textarea" placeholder="Fabrication">
+            <input type="text" placeholder="Fabrication">
         </div>
 
         <div class="subDivs">
@@ -208,58 +222,574 @@
 
         <div class="subDivs">
             <h2>RAM Type : &emsp;</h2>
-            <input type="textarea" placeholder="RAM Type">
+            <input type="text" placeholder="RAM Type">
         </div>
 
         <div class="subDivs">
             <h2>Graphics : &emsp;</h2>
-            <input type="textarea" placeholder="Graphics">
+            <input type="text" placeholder="Graphics">
         </div>
 
         <div class="hr"></div>
 
-        <!-- design -->
+        <!-- design and sizes -->
 
+        <h1><u>Design and Sizes</u></h1>
         <div class="subDivs">
             <h2>Height : &emsp;</h2>
-            <input type="textarea" placeholder="Height">
+            <input type="number" placeholder="Height">
         </div>
 
         <div class="subDivs">
             <h2>Width : &emsp;</h2>
-            <input type="textarea" placeholder="Width">
+            <input type="number" placeholder="Width">
         </div>
 
         <div class="subDivs">
             <h2>Thickness : &emsp;</h2>
-            <input type="textarea" placeholder="Thickness">
+            <input type="number" placeholder="Thickness">
         </div>
 
         <div class="subDivs">
             <h2>Weight : &emsp;</h2>
-            <input type="textarea" placeholder="Weight">
+            <input type="number" placeholder="Weight">
         </div>
 
         <div class="subDivs">
             <h2>Colors : &emsp;</h2>
-            <input type="textarea" placeholder="Colors">
+            <input type="text" placeholder="Colors">
         </div>
 
         <div class="subDivs">
             <h2>screen unlock: &emsp;</h2>
-            <select name="ram" id="ram">
-                <option value="face">face unlock</option>
-                <option value="finger">fingerprint</option>
-            </select>
+            <input type="text" placeholder="screen locks">
         </div>
 
         <div class="hr"></div>
 
 
         <!-- display -->
-        
+        <h1><u>Display infos</u></h1>
+
+        <div class="subDivs">
+            <h2>Resolution : &emsp;</h2>
+            <input type="number" placeholder="Resolution">
+        </div>
+
+        <div class="subDivs">
+            <h2>Aspect ratio : &emsp;</h2>
+            <input type="text" placeholder="Aspect ratio">
+        </div>
+
+        <div class="subDivs">
+            <h2>Display Type : &emsp;</h2>
+            <input type="text" placeholder="Display Type">
+        </div>
+
+        <div class="subDivs">
+            <h2>Size : &emsp;</h2>
+            <input type="text" placeholder="Size">
+        </div>
+
+        <div class="subDivs">
+            <h2>Bezel-less display : &emsp;</h2>
+            <select name="bazzel-less" id="bazzel-less">
+                <option value="">Select</option>
+                <option value="No">No</option>
+                <option value="Yes, with Punch Hole">Yes, with Punch Hole</option>
+                <option value="Yes, with Dew Drop">Yes, with Dew Drop</option>
+                <option value="Yes, Under Display">Yes, Under Display</option>
+                <option value="Yes, Pop Up">Yes, Pop Up</option>
+            </select>
+        </div>
+
+        <div class="subDivs">
+            <h2>Pixel Density : &emsp;</h2>
+            <input type="text" placeholder="Pixel Density">
+        </div>
+
+        <div class="subDivs">
+            <h2>Brightness : &emsp;</h2>
+            <input type="number" placeholder="Brightness">
+        </div>
+
+        <div class="subDivs">
+            <h2>TouchScreen : &emsp;</h2>
+            <input type="text" placeholder="TouchScreen">
+        </div>
+
+        <div class="subDivs">
+            <h2>Color Reproduction : &emsp;</h2>
+            <input type="text" placeholder="Color Reproduction ">
+        </div>
+
+        <div class="subDivs">
+            <h2>Screen to body percentage : &emsp;</h2>
+            <input type="number" placeholder="Screen to body percentage">
+        </div>
+
+        <div class="hr"></div>
+
+        <!-- Camera Setup -->
+        <h1><u>Camera Setup</u></h1>
+
+        <div class="subDivs">
+            <h2>Rear camera setup : &emsp;</h2>
+            <select name="rearCam" id="rearCam">
+                <option value="">Select</option>
+                <option value="Single">Single</option>
+                <option value="Double">Double</option>
+                <option value="Triple">Triple</option>
+                <option value="Quardriple">Quardriple</option>
+            </select>
+        </div>
+
+        <div class="subDivs">
+            <h2>Rear camera (Primary) : &emsp;</h2>
+            <input type="text" placeholder="Rear camera (Primary)">
+        </div>
+
+        <div class="subDivs">
+            <h2>Rear camera (Secondary) : &emsp;</h2>
+            <input type="text" placeholder="Rear camera (Secondary)">
+        </div>
+
+        <div class="subDivs">
+            <h2>Rear camera (Tertiary) : &emsp;</h2>
+            <input type="text" placeholder="Rear camera (Tertiary)">
+        </div>
+
+        <div class="subDivs">
+            <h2>Front camera setup : &emsp;</h2>
+            <select name="frontCam" id="frontCam">
+                <option value="">Select</option>
+                <option value="Single">Single</option>
+                <option value="Double">Double</option>
+            </select>
+        </div>
+
+        <div class="subDivs">
+            <h2>Front camera (Primary) : &emsp;</h2>
+            <input type="text" placeholder="Front camera (Primary)">
+        </div>
+
+        <div class="subDivs">
+            <h2>Front camera (Secondary) : &emsp;</h2>
+            <input type="text" placeholder="Front camera (Secondary)">
+        </div>
+
+        <div class="subDivs">
+            <h2>Sensor : &emsp;</h2>
+            <input type="text" placeholder="Sensor">
+        </div>
+
+        <div class="subDivs">
+            <h2>Flash : &emsp;</h2>
+            <input type="text" placeholder="Flash">
+        </div>
+
+        <div class="subDivs">
+            <h2>Digital Zoom : &emsp;</h2>
+            <input type="text" placeholder="Digital Zoom">
+        </div>
+
+        <div class="subDivs">
+            <h2>Video Resolution (Rear) : &emsp;</h2>
+            <input type="text" placeholder="Video Resolution (Rear)">
+        </div>
+
+        <div class="subDivs">
+            <h2>Video Resolution (front) : &emsp;</h2>
+            <input type="text" placeholder="Video Resolution (front)">
+        </div>
+
+        <div class="subDivs">
+            <h2>Optical Image Stabilization(OIS) : &emsp;</h2>
+            <select name="ois" id="ois">
+                <option value="">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div class="subDivs">
+            <h2>Electric Image Stabilization(EIS) : &emsp;</h2>
+            <select name="eis" id="eis">
+                <option value="">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div class="subDivs">
+            <h2>Camera Features : &emsp;</h2>
+            <input type="text" placeholder="Camera Features">
+        </div>
+
+        <div class="subDivs">
+            <h2>Shooting Modes : &emsp;</h2>
+            <input type="text" placeholder="Shooting Modes">
+        </div>
+
+        <div class="hr"></div>
 
 
+        <!-- Battery -->
+        <h1><u>Battery</u></h1>
+
+        <div class="subDivs">
+            <h2>Battery Type: &emsp;</h2>
+            <input type="text" placeholder="Battery type">
+        </div>
+
+        <div class="subDivs">
+            <h2>Capacity: &emsp;</h2>
+            <input type="text" placeholder="BAttery Capacity">
+        </div>
+
+        <div class="subDivs">
+            <h2>Removablw : &emsp;</h2>
+            <select name="btteryRemove" id="btteryRemove">
+                <option value="">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div class="subDivs">
+            <h2>Standby Time: &emsp;</h2>
+            <input type="text" placeholder="Standby Time">
+        </div>
+
+        <div class="subDivs">
+            <h2>Fast Charging &emsp;</h2>
+            <input type="text" placeholder="Fast Charging">
+        </div>
+
+        <div class="subDivs">
+            <h2>Charging Speed &emsp;</h2>
+            <input type="text" placeholder="Charging Speed">
+        </div>
+
+        <div class="subDivs">
+            <h2>wireless charging : &emsp;</h2>
+            <select name="charging" id="charging">
+                <option value="">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div class="hr"></div>
+
+
+        <!-- Storage -->
+        <h1><u>Storage</u></h1>
+
+        <div class="subDivs">
+            <h2>Internal Memory : &emsp;</h2>
+            <input type="number" placeholder="Internal Memory">
+        </div>
+
+        <div class="subDivs">
+            <h2>Memory Type: &emsp;</h2>
+            <input type="text" placeholder="Memory type">
+        </div>
+
+        <div class="subDivs">
+            <h2>Storage available for user: &emsp;</h2>
+            <input type="number" placeholder="Storage available for user">
+        </div>
+
+
+        <div class="hr"></div>
+
+        <!-- SOFTWARE -->
+        <h1><u>SOFTWARE</u></h1>
+
+        <div class="subDivs">
+            <h2>Operating System : &emsp;</h2>
+            <select name="OperatingSystem" id="OperatingSystem">
+                <option value="">Select</option>
+                <option value="Androis 11">Androis 11</option>
+                <option value="Androis 12">Androis 12</option>
+                <option value="Androis 13">Androis 13</option>
+                <option value="Androis 14">Androis 14</option>
+                <option value="Androis 15">Androis 15</option>
+                <option value="Androis 16">Androis 16</option>
+                <option value="Androis 17">Androis 17</option>
+                <option value="Androis 18">Androis 18</option>
+                <option value="Androis 19">Androis 19</option>
+                <option value="Androis 20">Androis 20</option>
+            </select>
+        </div>
+
+
+        <div class="subDivs">
+            <h2>Custom UI : &emsp;</h2>
+            <select name="ui" id="ui">
+                <option value="">Select</option>
+                <option value="Realme UI">Realme UI</option>
+                <option value="Samsung UI">samsung UI</option>
+                <option value="one UI">one UI</option>
+                <option value="Realme UI">Realme UI</option>
+                <option value="Realme UI">Realme UI</option>
+                <option value="Realme UI">Realme UI</option>
+            </select>
+        </div>
+
+        <div class="hr"></div>
+
+
+        <!-- CONNECTIVITY -->
+        <h1><u>CONNECTIVITY</u></h1>
+
+        <div class="subDivs">
+            <h2>SIM Configuration : &emsp;</h2>
+            <input type="number" placeholder="Internal Memory">
+        </div>
+
+        <div class="subDivs">
+            <h2>Network : &emsp;</h2>
+            SIM 1:
+            <select name="sim1" id="sim1">
+                <option value="4g">4g</option>
+                <option value="5g">5g</option>
+            </select>
+            SIM 2:
+            <select name="sim2" id="sim2">
+                <option value="4g">4g</option>
+                <option value="5g">5g</option>
+            </select>
+        </div>
+
+        <div class="subDivs">
+            <h2>SIM1 Bands : &emsp;</h2>
+            <input type="text" placeholder="SIM1 Bands">
+        </div>
+
+        <div class="subDivs">
+            <h2>SIM2 Bands : &emsp;</h2>
+            <input type="text" placeholder="SIM2 Bands">
+        </div>
+
+        <div class="subDivs">
+            <h2>Voice over LTE(VoLTE) : &emsp;</h2>
+            <select name="VoLTE" id="VoLTE">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div class="subDivs">
+            <h2>Wi-Fi : &emsp;</h2>
+            <input type="text" placeholder="Wi-Fi">
+        </div>
+
+        <div class="subDivs">
+            <h2>Wi-Fi Features : &emsp;</h2>
+            <input type="text" placeholder="Wi-Fi Features">
+        </div>
+
+        <div class="subDivs">
+            <h2>USB : &emsp;</h2>
+            <input type="text" placeholder="USB">
+        </div>
+
+        <div class="subDivs">
+            <h2>Bluetooth : &emsp;</h2>
+            <input type="text" placeholder="Bluetooth">
+        </div>
+
+        <div class="subDivs">
+            <h2>USB OTG Support : &emsp;</h2>
+            <select name="otg" id="otg">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div class="subDivs">
+            <h2>GPS : &emsp;</h2>
+            <select name="gps" id="gps">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div class="subDivs">
+            <h2>NFC : &emsp;</h2>
+            <select name="nfc " id="nfc">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+        </div>
+
+
+        <div class="subDivs">
+            <h2>Infrared : &emsp;</h2>
+            <select name="infrared" id="infrared">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+        </div>
+
+        <div class="hr"></div>
+
+        <!-- SOUND -->
+        <h1><u>SOUND</u></h1>
+
+        <div class="subDivs">
+            <h2>Speaker : &emsp;</h2>
+            <select name="Speaker" id="Speaker">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+        </div>
+
+        <div class="subDivs">
+            <h2>Speaker Features : &emsp;</h2>
+            <input type="text" placeholder="Speaker Features">
+        </div>
+
+        <div class="subDivs">
+            <h2>Audio Jack : &emsp;</h2>
+            <select name="audio" id="audio">
+                <option value="No">No</option>
+                <option value="Yes, Type-C">Type-C</option>
+                <option value="Yes, 3.5mm">3.5mm</option>
+            </select>
+        </div>
+
+        <div class="subDivs">
+            <h2>Video Player : &emsp;</h2>
+            <input type="checkbox" value="100">100
+            <input type="checkbox" value="100">200
+            <input type="checkbox" value="100">400
+            <input type="checkbox" value="100">500
+        </div>
+
+        <div class="hr"></div>
+
+        <!-- SENSORS -->
+        <h1><u>SENSORS</u></h1>
+
+        <div class="subDivs">
+            <h2>Fingerprint sensor : &emsp;</h2>
+            <select name="Fingerprint" id="Fingerprint">
+                <option value="No">No</option>
+                <option value="Yes, In Display">Yes, In Display</option>
+                <option value="Yes, Power button">Yes, Power button</option>
+            </select>
+        </div>
+
+        <div class="subDivs">
+            <h2>Face Unlock : &emsp;</h2>
+            <select name="Face" id="Face">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+        </div>
+
+        <div class="subDivs">
+            <h2>Other Sensors : &emsp;</h2>
+            <input type="checkbox" value="Light sensor">Light sensor
+            <input type="checkbox" value="Proximity sensor">Proximity sensor
+            <input type="checkbox" value=" Accelerometer"> Accelerometer
+            <input type="checkbox" value="Compass ">Compass
+            <input type="checkbox" value="Gyroscope ">Gyroscope
+        </div>
+
+        <div class="hr"></div>
+
+        <!-- ANTUTU SCORES -->
+        <h1><u>ANTUTU SCORES</u></h1>
+
+        <div class="subDivs">
+            <h2>Overall : &emsp;</h2>
+            <input type="number" placeholder="Overall">
+        </div>
+
+        <div class="subDivs">
+            <h2>CPU : &emsp;</h2>
+            <input type="number" placeholder="CPU">
+        </div>
+
+        <div class="subDivs">
+            <h2>GPU : &emsp;</h2>
+            <input type="number" placeholder="GPU">
+        </div>
+
+        <div class="subDivs">
+            <h2>Memory : &emsp;</h2>
+            <input type="number" placeholder="Memory">
+        </div>
+
+        <div class="subDivs">
+            <h2>UX : &emsp;</h2>
+            <input type="number" placeholder="UX">
+        </div>
+
+        <div class="hr"></div>
+
+        <!-- GEEKBENCH  SCORES -->
+        <h1><u>GEEKBENCH SCORES</u></h1>
+
+        <div class="subDivs">
+            <h2>Single-core : &emsp;</h2>
+            <input type="number" placeholder="Single-core">
+        </div>
+
+        <div class="subDivs">
+            <h2>Multi-core : &emsp;</h2>
+            <input type="number" placeholder="Multi-core">
+        </div>
+
+        <div class="hr"></div>
+
+
+
+        <!-- buy now button affiliate links -->
+        <h1><u>buy now button affiliate links</u></h1>
+
+        <div class="subDivs">
+            <h2>Amazon link : &emsp;</h2>
+            <input type="number" placeholder="Amazon affiliate link">
+        </div>
+
+        <div class="subDivs">
+            <h2>flipkart link : &emsp;</h2>
+            <input type="number" placeholder="flipkart affiliate link">
+        </div>
+
+        <div class="hr"></div>
+
+
+        <!-- Conclusions  -->
+        <h1><u>Conclusions about desdin display </u></h1>
+
+        <div class="subDivs">
+            <h2>Design, Display, and Security : &emsp;</h2>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="subDivs">
+            <h2>Processor, Storage, Camera : &emsp;</h2>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="subDivs">
+            <h2>Battery, Fast Charging, Connectivity : &emsp;</h2>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="hr"></div>
+
+
+        <div class="subDivs">
+            <button>draft</button>
+            <button>upload</button>
+        </div>
 
     </div>
 </body>
