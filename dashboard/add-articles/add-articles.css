@@ -16,6 +16,24 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #dbf9d7;
+}
+
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+select{
+    /* border: 2px solid red; */
+    border-radius: 9px;
+    width: 200px;
+}
+input{
+    height: 42px;
+    border-radius: 9px;
+    width: 200px;
 }
 
 .hr {
@@ -34,7 +52,6 @@ body{
     min-height: 200px;
     width: 100%;
     align-items: center;
-    margin-top: 20px;
 }
 
 .subDivs{
