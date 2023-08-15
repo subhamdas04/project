@@ -10,9 +10,9 @@
 
 <body>
     <h1 style="border-bottom: 10px solid salmon;">WRITE ABOUT THE DEVICE</style=></h1>
-    <!-- basic information -->
 
-    <div class="entryDivs">
+    <!-- basic information -->
+    <div class="entryDivs" id="Basic">
     
         <h1>Basics</h1>
 
@@ -41,15 +41,31 @@
         </div>
 
         <div class="subDivs">
-            <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button>Go back to Dashboard</button>
+            <button onclick="showNextDiv1()">Save and Next</button>
         </div>
 
     </div>
 
+    
+    <!-- camera sample image upload -->
+    <div class="entryDivs" id="CameraSamples">
+        <h1><u>Image Upload</u></h1>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="image">Select an image:</label>
+            <input type="file" name="image" id="image" accept="image/*">
+        </form>
+        
+        <div class="subDivs">
+            <button>Previous and Edit</button>
+            <button onclick="showNextDiv2()">Upload and Next</button>
+        </div>
+        
+    </div>
+    
 
     <!-- Key Specifications -->
-    <div class="entryDivs">
+    <div class="entryDivs" id="KeySpecifications">
         <h1><u>Key Specifications</u></h1>
         <div class="subDivs">
             <h2>Price: &emsp;</h2>
@@ -107,14 +123,13 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv3()">Save and Next</button>
         </div>
     </div>
 
 
-
     <!-- Pros and Cons -->
-    <div class="entryDivs">
+    <div class="entryDivs" id="ProsAndCons">
 
         <h1><u>Pros and Cons</u></h1>
         <div class="subDivs">
@@ -139,30 +154,14 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv4()">Save and Next</button>
         </div>
 
     </div>
 
 
-    <!-- camera sample image upload -->
-    <div class="entryDivs">
-        <h1><u>Image Upload</u></h1>
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            <label for="image">Select an image:</label>
-            <input type="file" name="image" id="image" accept="image/*">
-        </form>
-
-        <div class="subDivs">
-            <button>Previous and Edit</button>
-            <button>Save and Next</button>
-        </div>
-
-    </div>
-
-
-    <div class="entryDivs">
-        <!-- Verdict about the device -->
+    <!-- Verdict about the device -->
+    <div class="entryDivs" id="Verdict">
         <h1><u>Verdict</u></h1>
         <div class="subDivs">
             <h2>Verdict : &emsp;</h2>
@@ -172,13 +171,13 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv5()">Save and Next</button>
         </div>
     </div>
 
 
-    <div class="entryDivs">
-        <!-- Detailed Specifications of DEVICE  -->
+    <!-- Detailed Specifications of DEVICE  -->
+    <div class="entryDivs" id="DetailedSpecifications">
         <h1><u>Detailed Specifications of DEVICE </u></h1>
         <div class="subDivs">
             <h2>Processor Chipset : &emsp;</h2>
@@ -218,14 +217,14 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv6()">Save and Next</button>
         </div>
 
     </div>
 
 
-    <div class="entryDivs">
-        <!-- performances -->
+    <!-- Performances -->
+    <div class="entryDivs" id="Performances">
 
         <h1><u>Performances</u></h1>
         <div class="subDivs">
@@ -276,13 +275,13 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv7()">Save and Next</button>
         </div>
     </div>
 
 
-    <div class="entryDivs">
-        <!-- design and sizes -->
+    <!-- design and sizes -->
+    <div class="entryDivs" id="DesignAndSizes">
 
         <h1><u>Design and Sizes</u></h1>
         <div class="subDivs">
@@ -317,14 +316,15 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv8()">Save and Next</button>
         </div>
 
     </div>
 
 
-    <div class="entryDivs">
-        <!-- display -->
+    <!-- display -->
+    <div class="entryDivs" id="Display">
+
         <h1><u>Display infos</u></h1>
 
         <div class="subDivs">
@@ -386,14 +386,14 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv9()">Save and Next</button>
         </div>
 
     </div>
 
 
-    <div class="entryDivs">
-        <!-- Camera Setup -->
+    <!-- Camera Setup -->
+    <div class="entryDivs" id="CameraSetup">
         <h1><u>Camera Setup</u></h1>
 
         <div class="subDivs">
@@ -496,13 +496,13 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv10()">Save and Next</button>
         </div>
     </div>
 
 
-    <div class="entryDivs">
-        <!-- Battery -->
+    <!-- Battery -->
+    <div class="entryDivs" id="Battery">
         <h1><u>Battery</u></h1>
 
         <div class="subDivs">
@@ -516,7 +516,7 @@
         </div>
 
         <div class="subDivs">
-            <h2>Removablw : &emsp;</h2>
+            <h2>Removable : &emsp;</h2>
             <select name="btteryRemove" id="btteryRemove">
                 <option value="">Select</option>
                 <option value="Yes">Yes</option>
@@ -550,14 +550,14 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv11()">Save and Next</button>
         </div>
 
     </div>
 
 
-    <div class="entryDivs">
-        <!-- Storage -->
+    <!-- Storage -->
+    <div class="entryDivs" id="Storage">
         <h1><u>Storage</u></h1>
 
         <div class="subDivs">
@@ -577,14 +577,14 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv12()">Save and Next</button>
         </div>
     </div>
 
 
-    <div class="entryDivs">
-        <!-- SOFTWARE -->
-        <h1><u>SOFTWARE</u></h1>
+    <!-- SOFTWARE -->
+    <div class="entryDivs" id="Software">
+        <h1><u>Software</u></h1>
 
         <div class="subDivs">
             <h2>Operating System : &emsp;</h2>
@@ -619,13 +619,14 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv13()">Save and Next</button>
         </div>
 
     </div>
 
-    <div class="entryDivs">
-        <!-- CONNECTIVITY -->
+
+    <!-- CONNECTIVITY -->
+    <div class="entryDivs" id="Connectivity">
         <h1><u>CONNECTIVITY</u></h1>
 
         <div class="subDivs">
@@ -720,13 +721,14 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv14()">Save and Next</button>
         </div>
 
     </div>
 
-    <div class="entryDivs">
-        <!-- SOUND -->
+
+    <!-- SOUND -->
+    <div class="entryDivs" id="Sound">
         <h1><u>SOUND</u></h1>
 
         <div class="subDivs">
@@ -761,16 +763,15 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv15()">Save and Next</button>
         </div>
 
     </div>
 
 
-
-    <div class="entryDivs">
-        <!-- SENSORS -->
-        <h1><u>SENSORS</u></h1>
+    <!-- SENSORS -->
+    <div class="entryDivs" id="Sensors">
+        <h1><u>Sensors</u></h1>
 
         <div class="subDivs">
             <h2>Fingerprint sensor : &emsp;</h2>
@@ -800,13 +801,14 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv16()">Save and Next</button>
         </div>
     </div>
 
-    <div class="entryDivs">
-        <!-- ANTUTU SCORES -->
-        <h1><u>ANTUTU SCORES</u></h1>
+
+    <!-- ANTUTU SCORES -->
+    <div class="entryDivs" id="Antutu">
+        <h1><u>Antutu Scores</u></h1>
 
         <div class="subDivs">
             <h2>Overall : &emsp;</h2>
@@ -834,15 +836,16 @@
         </div>
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv17()">Save and Next</button>
         </div>
 
     </div>
 
-    <div class="entryDivs">
 
-        <!-- GEEKBENCH  SCORES -->
-        <h1><u>GEEKBENCH SCORES</u></h1>
+    <!-- GEEKBENCH  SCORES -->
+    <div class="entryDivs" id="Geekbench">
+
+        <h1><u>Geekbench Scores</u></h1>
 
         <div class="subDivs">
             <h2>Single-core : &emsp;</h2>
@@ -856,13 +859,14 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv18()">Save and Next</button>
         </div>
 
     </div>
 
-    <div class="entryDivs">
-        <!-- buy now button affiliate links -->
+
+    <!-- buy now button affiliate links -->
+    <div class="entryDivs" id="affiliate">
         <h1><u>buy now button affiliate links</u></h1>
 
         <div class="subDivs">
@@ -877,13 +881,14 @@
 
         <div class="subDivs">
             <button>Previous and Edit</button>
-            <button>Save and Next</button>
+            <button onclick="showNextDiv19()">Save and Next</button>
         </div>
 
     </div>
 
-    <div class="entryDivs">
-        <!-- Conclusions  -->
+
+    <!-- Conclusions  -->
+    <div class="entryDivs" id="Conclusions">
         <h1><u>Conclusions about desdin display </u></h1>
 
         <div class="subDivs">
@@ -902,11 +907,14 @@
         </div>
 
         <div class="subDivs">
-            <button>Previous and Edit</button>
-            <button>Upload Post</button>
+            <button>Draft</button>
+            <button onclick="SubmitPost()">Upload Post</button>
         </div>
     </div>
 
+
+
+    <script src="jsForArticles.js"></script>
 </body>
 
 </html>

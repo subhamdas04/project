@@ -99,7 +99,7 @@ input {
 .subDivs button:hover {
     background-color: #000;
     color: #fff;
-    width: 40%;
+    height: 45px;
     font-weight: 700;
 }
 
@@ -116,4 +116,26 @@ input {
 .prosCons input {
     margin-top: 9px;
 
+}
+
+#CameraSamples,
+#KeySpecifications,
+#ProsAndCons,
+#Verdict,
+#DetailedSpecifications,
+#Performances,
+#DesignAndSizes,
+#Display,
+#CameraSetup,
+#Battery,
+#Storage,
+#Software,
+#Connectivity,
+#Sound,
+#Sensors,
+#Antutu,
+#Geekbench,
+#affiliate,
+#Conclusions{
+    display: none;
 }
