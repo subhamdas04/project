@@ -38,6 +38,9 @@ input {
     height: 42px;
     border-radius: 9px;
     width: 200px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 20px;
 }
 
 .hr {
@@ -61,6 +64,9 @@ input {
 .entryDivs{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #c8f6c2;
     height: 80%;
     width: 80%;
     border: 2px solid black;
@@ -68,11 +74,13 @@ input {
     max-width: 1000px;
     min-height: 500px;
     border-radius: 15px;
-    box-shadow: rgb(255, 0, 0) 7px 11px 10px 10px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: 0.31s ease-in-out;
 }
 
 .entryDivs:hover{
-    box-shadow: rgb(106, 255, 0) 7px 11px 10px 10px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: 2px solid red;
+    background-color: #b3ecaa;
 }
 
 
@@ -82,7 +90,12 @@ input {
     width: 100%;
     align-items: top;
     margin-top: 10px;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.subDivs button{
+    height: 35px;
+    width: 40%;
 }
 
 .prosCons {
@@ -92,4 +105,5 @@ input {
 
 .prosCons input {
     margin-top: 9px;
+
 }
