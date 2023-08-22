@@ -33,18 +33,18 @@
 
         <div class="subDivs">
             <h2>Device Name: &emsp;</h2>
-            <input type="text">
+            <input type="text" name="deviceName">
         </div>
 
         <div class="subDivs">
             <h2>Release Date: &emsp;</h2>
-            <input type="date">
+            <input type="date" name="relDate">
         </div>
 
         <div class="subDivs">
             <a href="http://127.0.0.1:5500/dashboard/">
                 <button>Go back to Dashboard</button></a>
-            <button onclick="showNextDiv1()">Save and Next</button>
+            <button id='saveBasics'>Save and Next</button>
         </div>
 
     </div>
@@ -53,9 +53,9 @@
     <!-- camera sample image upload -->
     <div class="entryDivs" id="CameraSamples">
         <h1><u>Image Upload</u></h1>
-        <form action="upload.php" method="post" enctype="multipart/form-data">
+        <form action="" method="" enctype="">
             <label for="image">Select an image:</label>
-            <input type="file" name="image" id="image" accept="image/*">
+            <input type="file" name="image" id="image" accept="image/*" multiple>
         </form>
 
         <div class="subDivs">
@@ -917,6 +917,33 @@
 
 
     <script src="jsForArticles.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#saveBasics').click(function(){
+                var a = document.getElementsByName("relDate")[0].value;
+                var b = document.getElementsByName("deviceName")[0].value;
+                var c = document.getElementsByName("brand")[0].value;
+
+                $.ajax({
+                    type: "GET",
+                    url: "basics.php",
+                    data: {
+                        p: a,
+                        q: b,
+                        r: c
+                    },
+                    success: function(data){
+                        if(data == "success"){
+                            
+                        }else{
+                            alert("Some error occurred");
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
